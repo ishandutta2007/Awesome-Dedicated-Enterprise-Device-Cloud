@@ -10,7 +10,7 @@
 <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![GitHub contributors](https://img.shields.io/github/contributors/ishandutta2007/Awesome-Dedicated-Enterprise-Device-Cloud?style=flat-square)](https://github.com/ishandutta2007/Awesome-Dedicated-Enterprise-Device-Cloud/graphs/contributors)
-[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Dedicated-Enterprise-Device-Cloud?style=flat-square)](https://github.com/ishandutta2007/Awesome-Dedicated-Enterprise-Device-Cloud/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Dedicated-Enterprise-Device-Cloud?style=flat-square)](https://github.com/ishandutta2007/Awesome-Dedicated-Enterprise-Device-Cloud/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
@@ -61,7 +61,7 @@ For engineering teams seeking complete data sovereignty, zero recurring cloud li
 
 Sorted in descending order by GitHub stargazers count:
 
-| Repository | ⭐ GitHub Stars | 💻 Primary Language | 🏗️ Architecture & Description |
+| Repository | ⭐ GitHub_Stars | 💻 Primary Language | 🏗️ Architecture & Description |
 | :--- | :---: | :---: | :--- |
 | **[Genymobile/scrcpy](https://github.com/Genymobile/scrcpy)** | [![scrcpy Stars](https://img.shields.io/github/stars/Genymobile/scrcpy?style=social&color=white)](https://github.com/Genymobile/scrcpy/stargazers) | C / Java | Foundational low-latency Android screen mirroring and remote control over USB/TCP-IP. Powers remote frame grabbing in numerous private device cloud architectures. |
 | **[appium/appium](https://github.com/appium/appium)** | [![Appium Stars](https://img.shields.io/github/stars/appium/appium?style=social&color=white)](https://github.com/appium/appium/stargazers) | TypeScript / JS | The industry-standard open-source automation framework for cross-platform native, hybrid, and mobile web testing on iOS, Android, and Windows. |
@@ -120,3 +120,12 @@ Thank you so much for using and exploring **Awesome Dedicated Enterprise Device 
 
 - 📄 Licensed under the [MIT License](LICENSE).
 - ⚖️ *Disclaimer*: All product names, logos, trademarks, and registered trademarks belong to their respective owners. Mention of SaaS providers and open-source projects is for informational and educational purposes only and does not constitute formal endorsement.
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Dedicated-Enterprise-Device-Cloud&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Dedicated-Enterprise-Device-Cloud_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Dedicated-Enterprise-Device-Cloud_growth.svg">
+  </picture>
+</a>
