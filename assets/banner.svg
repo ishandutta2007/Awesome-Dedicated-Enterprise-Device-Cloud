@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="45%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+
+    <linearGradient id="primaryTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa">
+        <animate attributeName="stop-color" values="#60a5fa;#38bdf8;#818cf8;#a855f7;#60a5fa" dur="10s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#38bdf8">
+        <animate attributeName="stop-color" values="#38bdf8;#818cf8;#a855f7;#60a5fa;#38bdf8" dur="10s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#a855f7">
+        <animate attributeName="stop-color" values="#a855f7;#60a5fa;#38bdf8;#818cf8;#a855f7" dur="10s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.05" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.8" stroke-opacity="0.3" />
+      <circle cx="40" cy="40" r="1.5" fill="#38bdf8" fill-opacity="0.25" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="orbGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="50" result="blur" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(0.5deg); }
+    }
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1); opacity: 0.28; }
+      50% { transform: scale(1.15); opacity: 0.45; }
+    }
+    @keyframes waveDash {
+      to { stroke-dashoffset: -100; }
+    }
+    @keyframes pingDot {
+      0% { r: 3; opacity: 1; }
+      100% { r: 10; opacity: 0; }
+    }
+    .floating-card {
+      animation: floatSlow 6s ease-in-out infinite;
+    }
+    .pulsing-orb {
+      animation: pulseOrb 8s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .animated-wire {
+      stroke-dasharray: 6 6;
+      animation: waveDash 4s linear infinite;
+    }
+    .title-font {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+    }
+    .body-font {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+    }
+    .mono-font {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="420" rx="16" fill="url(#gridPattern)" />
+
+  <!-- Dynamic Glowing Ambient Orbs (Background) -->
+  <circle cx="180" cy="90" r="120" fill="#3b82f6" class="pulsing-orb" filter="url(#orbGlow)" />
+  <circle cx="1020" cy="310" r="140" fill="#8b5cf6" class="pulsing-orb" style="animation-delay: -3s;" filter="url(#orbGlow)" />
+  <circle cx="940" cy="90" r="90" fill="#06b6d4" class="pulsing-orb" style="animation-delay: -5s;" filter="url(#orbGlow)" />
+
+  <!-- Animated Connection Circuit Lines (Background) -->
+  <g opacity="0.35">
+    <path class="animated-wire" d="M 80 340 H 420 Q 460 340 480 320 L 520 280 H 780" fill="none" stroke="#38bdf8" stroke-width="1.8" />
+    <path class="animated-wire" d="M 300 80 H 700 Q 740 80 760 100 L 800 140 H 1120" fill="none" stroke="#a855f7" stroke-width="1.8" style="animation-duration: 5s;" />
+  </g>
+
+  <!-- Animated Decorative Node Badges (Background/Accents) -->
+  <g class="floating-card" transform="translate(900, 45)">
+    <rect width="240" height="64" rx="12" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.2" stroke-opacity="0.4" />
+    <circle cx="28" cy="32" r="7" fill="#10b981" />
+    <circle cx="28" cy="32" r="7" fill="#10b981">
+      <animate attributeName="r" values="7;15;7" dur="2.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.8;0;0.8" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+    <text x="48" y="28" fill="#f8fafc" class="body-font" font-size="12" font-weight="700">REAL DEVICES ACTIVE</text>
+    <text x="48" y="46" fill="#94a3b8" class="mono-font" font-size="11">Dedicated &amp; Isolated Farms</text>
+  </g>
+
+  <g class="floating-card" transform="translate(930, 275)" style="animation-delay: -2.5s;">
+    <rect width="210" height="58" rx="12" fill="url(#cardGrad)" stroke="#8b5cf6" stroke-width="1.2" stroke-opacity="0.4" />
+    <rect x="18" y="18" width="22" height="22" rx="6" fill="#7c3aed" fill-opacity="0.3" stroke="#a78bfa" stroke-width="1" />
+    <path d="M 24 29 L 28 33 L 35 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="50" y="32" fill="#f8fafc" class="body-font" font-size="12" font-weight="700">SOC 2 / MDM / VPN</text>
+    <text x="50" y="47" fill="#94a3b8" class="body-font" font-size="11">Enterprise Compliance</text>
+  </g>
+
+  <!-- Foreground Main Branding & Text Content (Always Visible & High Contrast) -->
+  <g transform="translate(70, 75)">
+    <!-- Top Pill Category Badge -->
+    <g transform="translate(0, 0)">
+      <rect width="365" height="30" rx="15" fill="#1e293b" fill-opacity="0.85" stroke="#3b82f6" stroke-width="1" />
+      <circle cx="16" cy="15" r="4.5" fill="#38bdf8">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="28" y="19" fill="#93c5fd" class="mono-font" font-size="11.5" font-weight="600" letter-spacing="0.05em">ENTERPRISE TESTING ECOSYSTEM</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="78" fill="url(#primaryTextGrad)" class="title-font" font-size="44" font-weight="900">
+      Awesome Dedicated
+    </text>
+    <text x="0" y="130" fill="#f8fafc" class="title-font" font-size="44" font-weight="900">
+      Enterprise Device Cloud
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="174" fill="#cbd5e1" class="body-font" font-size="17" font-weight="500">
+      Curated directory of SaaS private clouds, self-hosted device farms &amp; orchestration tools.
+    </text>
+    <text x="0" y="200" fill="#94a3b8" class="body-font" font-size="14">
+      Exclusive access • Isolated testing environments • On-premises &amp; hybrid device reservation
+    </text>
+
+    <!-- Interactive / Feature Pills -->
+    <g transform="translate(0, 235)">
+      <!-- Pill 1: SaaS Private Clouds -->
+      <g>
+        <rect width="170" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <circle cx="18" cy="17" r="4" fill="#3b82f6" />
+        <text x="32" y="21" fill="#e2e8f0" class="body-font" font-size="12.5" font-weight="600">SaaS Private Clouds</text>
+      </g>
+      <!-- Pill 2: Open-Source Device Farms -->
+      <g transform="translate(182, 0)">
+        <rect width="195" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <circle cx="18" cy="17" r="4" fill="#10b981" />
+        <text x="32" y="21" fill="#e2e8f0" class="body-font" font-size="12.5" font-weight="600">Open-Source Self-Hosted</text>
+      </g>
+      <!-- Pill 3: Appium & Remote Control -->
+      <g transform="translate(389, 0)">
+        <rect width="180" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <circle cx="18" cy="17" r="4" fill="#8b5cf6" />
+        <text x="32" y="21" fill="#e2e8f0" class="body-font" font-size="12.5" font-weight="600">Appium &amp; Automation</text>
+      </g>
+      <!-- Pill 4: Hardware & MDM -->
+      <g transform="translate(581, 0)">
+        <rect width="155" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <circle cx="18" cy="17" r="4" fill="#f59e0b" />
+        <text x="32" y="21" fill="#e2e8f0" class="body-font" font-size="12.5" font-weight="600">MDM &amp; Security</text>
+      </g>
+    </g>
+  </g>
+</svg>
