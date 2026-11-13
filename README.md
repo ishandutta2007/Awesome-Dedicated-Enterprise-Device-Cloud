@@ -2,42 +2,47 @@
   <img src="assets/banner.svg" alt="Awesome Dedicated Enterprise Device Cloud Banner" width="100%" />
 </p>
 
-# Awesome Dedicated Enterprise Device Cloud [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# 📱 Awesome Dedicated Enterprise Device Cloud ☁️ [![Awesome](https://awesome.re/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
 
-> A curated directory of SaaS platforms, self-hosted device farms, and open-source infrastructure tools for **Dedicated Enterprise Device Clouds**, private mobile labs, and isolated continuous testing environments.
+> 🌟 A curated directory of SaaS platforms, self-hosted device farms, and open-source infrastructure tools for **Dedicated Enterprise Device Clouds**, private mobile labs, and isolated continuous testing environments.
 
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+<a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![GitHub contributors](https://img.shields.io/github/contributors/ishandutta2007/Awesome-Dedicated-Enterprise-Device-Cloud?style=flat-square)](https://github.com/ishandutta2007/Awesome-Dedicated-Enterprise-Device-Cloud/graphs/contributors)
 [![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Dedicated-Enterprise-Device-Cloud?style=flat-square)](https://github.com/ishandutta2007/Awesome-Dedicated-Enterprise-Device-Cloud/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 Dedicated Enterprise Device Clouds provide exclusive, reserved access to real mobile smartphones, tablets, and desktop browsers hosted in isolated environments. Unlike shared public device pools, dedicated device farms feature persistent device state, custom MDM (Mobile Device Management) profiles, VPN tunnels, SIM card configurations, and hardware-level isolation required for enterprise compliance, security, and mission-critical automated testing (Appium, Selenium, XCUITest, Espresso).
 
 ---
 
-## Table of Contents
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [Enterprise SaaS & Hosted Private Clouds](#enterprise-saas--hosted-private-clouds)
-- [Open-Source Device Farms & Orchestration](#open-source-device-farms--orchestration)
-- [Key Architectural Considerations](#key-architectural-considerations)
-- [Contributing](#contributing)
-- [License & Disclaimer](#license--disclaimer)
+## 📑 Table of Contents
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 Enterprise SaaS & Hosted Private Clouds](#-enterprise-saas--hosted-private-clouds)
+- [🛠️ Open-Source Device Farms & Orchestration](#️-open-source-device-farms--orchestration)
+- [🏗️ Key Architectural Considerations](#️-key-architectural-considerations)
+- [🤝 Contributing](#-contributing)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [📜 License & Disclaimer](#-license--disclaimer)
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
-The global mobile application testing and cloud device farm market is valued at approximately **$8 Billion to $12 Billion** and is projected to expand to **$35 Billion to $50 Billion by 2032–2034**, expanding at a robust Compound Annual Growth Rate (**CAGR of ~16% to 17.5%**).
+The global mobile application testing and cloud device farm market is valued at approximately **$8 Billion to $12 Billion** and is projected to expand to **$35 Billion to $50 Billion by 2032–2034**, expanding at a robust Compound Annual Growth Rate (**CAGR of ~16% to 17.5%**). 🚀
 
-The enterprise device cloud sector is **moderately fragmented**: hyper-scale public cloud titans (such as AWS Device Farm) provide underlying elastic compute infrastructure, while specialized QA testing leaders (such as BrowserStack, Sauce Labs, and SmartBear BitBar) capture substantial private enterprise workloads, co-existing alongside niche compliance platforms and a flourishing open-source ecosystem (e.g., DeviceFarmer STF, GADS, Appium) leveraged by engineering teams with strict on-premise data sovereignty mandates.
+The enterprise device cloud sector is **moderately fragmented**: hyper-scale public cloud titans (such as AWS Device Farm) provide underlying elastic compute infrastructure, while specialized QA testing leaders (such as BrowserStack, Sauce Labs, and SmartBear BitBar) capture substantial private enterprise workloads, co-existing alongside niche compliance platforms and a flourishing open-source ecosystem (e.g., DeviceFarmer STF, GADS, Appium) leveraged by engineering teams with strict on-premise data sovereignty mandates. 🌐
 
 ---
 
-## Enterprise SaaS & Hosted Private Clouds
+## 🏢 Enterprise SaaS & Hosted Private Clouds
 
 The following commercial vendors deliver dedicated, isolated device infrastructure with custom enterprise security controls. Ranked and sorted in descending order by company scale (market capitalization or private valuation / estimated revenue):
 
-| Product | Company Size (Valuation / Revenue) | Description | Starting Pricing | Free Tier / Trial Limits |
+| Product | 🏢 Company Size (Valuation / Revenue) | 📝 Description | 💳 Starting Pricing | 🎁 Free Tier / Trial Limits |
 | :--- | :--- | :--- | :--- | :--- |
 | **[AWS Device Farm Private Devices](https://aws.amazon.com/device-farm/)** | **~$2.2 Trillion Market Cap** (Amazon / AWS: $100B+ ARR) | Physical smartphones and tablets deployed in dedicated AWS data center racks exclusively for your AWS account. Supports rooted Android configurations, custom OS builds, manual debugging, and Appium/XCUITest automation suites. | Starts at **$200/month per dedicated device** (plus hardware tiering) | One-time **1,000 free device minutes** for initial testing on AWS Device Farm; private hardware instances require paid subscription. |
 | **[BrowserStack Custom Device Lab](https://www.browserstack.com/custom-device-lab)** | **$4.0 Billion Valuation** (~$225M–$250M ARR) | Private device racks providing 100% reserved iOS, Android, and desktop browser environments. Offers custom MDM profile pushing, fixed SIM cards, biometric testing (Touch ID/Face ID, Apple Pay), local network VPN tunneling, and zero session data contamination. | Starts at **$29/user/month** (Standard Live); Custom Device Lab starts at **~$2,500/month** (Annual enterprise commitment) | **Free trial includes 30 minutes** of interactive Live testing and **100 minutes** of automated testing across real devices upon signup. |
@@ -50,13 +55,13 @@ The following commercial vendors deliver dedicated, isolated device infrastructu
 
 ---
 
-## Open-Source Device Farms & Orchestration
+## 🛠️ Open-Source Device Farms & Orchestration
 
-For engineering teams seeking complete data sovereignty, zero recurring cloud license fees, and the ability to build self-hosted device walls, these open-source tools offer device control, screen streaming, and grid orchestration. 
+For engineering teams seeking complete data sovereignty, zero recurring cloud license fees, and the ability to build self-hosted device walls, these open-source tools offer device control, screen streaming, and grid orchestration. ⚡
 
 Sorted in descending order by GitHub stargazers count:
 
-| Repository | GitHub Stars | Primary Language | Architecture & Description |
+| Repository | ⭐ GitHub Stars | 💻 Primary Language | 🏗️ Architecture & Description |
 | :--- | :---: | :---: | :--- |
 | **[Genymobile/scrcpy](https://github.com/Genymobile/scrcpy)** | [![scrcpy Stars](https://img.shields.io/github/stars/Genymobile/scrcpy?style=social&color=white)](https://github.com/Genymobile/scrcpy/stargazers) | C / Java | Foundational low-latency Android screen mirroring and remote control over USB/TCP-IP. Powers remote frame grabbing in numerous private device cloud architectures. |
 | **[appium/appium](https://github.com/appium/appium)** | [![Appium Stars](https://img.shields.io/github/stars/appium/appium?style=social&color=white)](https://github.com/appium/appium/stargazers) | TypeScript / JS | The industry-standard open-source automation framework for cross-platform native, hybrid, and mobile web testing on iOS, Android, and Windows. |
@@ -73,20 +78,20 @@ Sorted in descending order by GitHub stargazers count:
 
 ---
 
-## Key Architectural Considerations
+## 🏗️ Key Architectural Considerations
 
 When architecting an enterprise-grade dedicated device cloud (or deciding between SaaS vs. self-hosted), evaluate these core technical vectors:
 
-1. **Host-to-Device Physical Topology**: Real devices require industrial USB hubs (Cambrionix, Tripp Lite) with per-port power cycling to prevent battery bloating and disconnect dropouts.
-2. **Network Isolation & MDM Profiles**: Enterprise compliance requires dedicated subnetting, VPN tunnels (IPsec/WireGuard), and MDM profiles to inject client certificates, configure corporate proxies, and manage entitlements.
-3. **Automated State Teardown**: After test sessions finish, ensure automated reset routines execute: uninstall test APKs/IPAs, clear application data, reset system permissions, and revoke device credentials.
-4. **iOS vs. Android Complexity**: While Android can be orchestrated across Linux hosts using ADB, iOS devices mandate macOS host machines with Xcode developer provisioning profiles, WDA (WebDriverAgent), and Apple Developer Enterprise accounts.
+1. 🔌 **Host-to-Device Physical Topology**: Real devices require industrial USB hubs (Cambrionix, Tripp Lite) with per-port power cycling to prevent battery bloating and disconnect dropouts.
+2. 🛡️ **Network Isolation & MDM Profiles**: Enterprise compliance requires dedicated subnetting, VPN tunnels (IPsec/WireGuard), and MDM profiles to inject client certificates, configure corporate proxies, and manage entitlements.
+3. 🔄 **Automated State Teardown**: After test sessions finish, ensure automated reset routines execute: uninstall test APKs/IPAs, clear application data, reset system permissions, and revoke device credentials.
+4. 🍏 **iOS vs. Android Complexity**: While Android can be orchestrated across Linux hosts using ADB, iOS devices mandate macOS host machines with Xcode developer provisioning profiles, WDA (WebDriverAgent), and Apple Developer Enterprise accounts.
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
-Contributions, updates, and corrections are warmly welcomed!
+Contributions, updates, and corrections are warmly welcomed! 🌟
 
 1. Fork this repository.
 2. Add your suggested SaaS product or open-source repository following the table format.
@@ -95,7 +100,23 @@ Contributions, updates, and corrections are warmly welcomed!
 
 ---
 
-## License & Disclaimer
+## 💖 Support & Sponsorship
 
-- Licensed under the [MIT License](LICENSE).
-- *Disclaimer*: All product names, logos, trademarks, and registered trademarks belong to their respective owners. Mention of SaaS providers and open-source projects is for informational and educational purposes only and does not constitute formal endorsement.
+Thank you so much for using and exploring **Awesome Dedicated Enterprise Device Cloud**! If you find this curated collection helpful for your testing pipelines, enterprise infrastructure, or team research, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it.
+- 🍴 **Fork and share** it with fellow QA engineers and platform teams.
+- ☕ **Buy me a coffee / Sponsor the project**: Contributions directly fuel continuous maintenance and research! You can sponsor via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Dedicated-Enterprise-Device-Cloud&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Dedicated-Enterprise-Device-Cloud&type=date&legend=top-left)
+
+---
+
+## 📜 License & Disclaimer
+
+- 📄 Licensed under the [MIT License](LICENSE).
+- ⚖️ *Disclaimer*: All product names, logos, trademarks, and registered trademarks belong to their respective owners. Mention of SaaS providers and open-source projects is for informational and educational purposes only and does not constitute formal endorsement.
